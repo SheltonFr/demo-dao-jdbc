@@ -1,11 +1,10 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package application;
 
+import java.util.List;
 import model.dao.DaoFactory;
 import model.dao.SellerDao;
+import model.entities.Department;
 import model.entities.Seller;
 
 /**
@@ -18,9 +17,15 @@ public class Program {
         
         SellerDao sellerDao = DaoFactory.createSellerDao();
         
-        System.out.println("=== TESTE 1: seller findById ===");
+        System.out.println("=== TEST 1: seller findById ===");
         Seller seller = sellerDao.findById(1);
-        
         System.out.println(seller);
+        
+        System.out.println("\n=== TEST 2: seller findById ===");
+        Department department = new Department(1, null);
+        List<Seller> list = sellerDao.findByDepartment(department);
+        for(Seller obj: list){
+            System.out.println(obj);
+        }
     }
 }
