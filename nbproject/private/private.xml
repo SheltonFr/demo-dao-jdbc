@@ -3,9 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/C:/Users/Admin/Documents/estudos/Java/JavaCourse_Udemy/21-Acesso%20a%20banco%20de%20dados%20com%20JDBC/demo-dao-jdbc/src/db/DB.java</file>
+            <file>file:/C:/Users/Admin/Documents/estudos/Java/JavaCourse_Udemy/21-Acesso%20a%20banco%20de%20dados%20com%20JDBC/demo-dao-jdbc/src/model/dao/impl/SellerDaoJDBC.java</file>
+            <file>file:/C:/Users/Admin/Documents/estudos/Java/JavaCourse_Udemy/21-Acesso%20a%20banco%20de%20dados%20com%20JDBC/demo-dao-jdbc/src/model/dao/SellerDao.java</file>
             <file>file:/C:/Users/Admin/Documents/estudos/Java/JavaCourse_Udemy/21-Acesso%20a%20banco%20de%20dados%20com%20JDBC/demo-dao-jdbc/src/application/Program.java</file>
-            <file>file:/C:/Users/Admin/Documents/estudos/Java/JavaCourse_Udemy/21-Acesso%20a%20banco%20de%20dados%20com%20JDBC/demo-dao-jdbc/src/model/entities/Department.java</file>
-            <file>file:/C:/Users/Admin/Documents/estudos/Java/JavaCourse_Udemy/21-Acesso%20a%20banco%20de%20dados%20com%20JDBC/demo-dao-jdbc/src/model/entities/Seller.java</file>
+            <file>file:/C:/Users/Admin/Documents/estudos/Java/JavaCourse_Udemy/21-Acesso%20a%20banco%20de%20dados%20com%20JDBC/demo-dao-jdbc/src/model/dao/DaoFactory.java</file>
         </group>
     </open-files>
 </project-private>
