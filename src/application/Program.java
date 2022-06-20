@@ -63,10 +63,14 @@ public class Program {
         newDepartemnt = departmentDao.findById(1);
         System.out.println(newDepartemnt);
      
-         System.out.println("\n=== TEST 3: Find All departments ===");
+         /*System.out.println("\n=== TEST 3: Find All departments ===");
          List<Department> list = departmentDao.findAll();
          for(Department dep : list){
              System.out.println(dep);
-         }
+         }*/
+         
+         System.out.println("\n=== TESTE 4: Updatint department ===");
+         Department d = new Department(5,"Engenharia");
+         departmentDao.update(d);
     }
 }
