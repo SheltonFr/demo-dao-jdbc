@@ -14,6 +14,7 @@ import java.sql.PreparedStatement;
 import java.sql.Statement;
 import java.sql.SQLException;
 import java.sql.Connection;
+import java.sql.ResultSet;
 
 /**
  *
@@ -59,7 +60,31 @@ public class DepartmentDaoJDBC implements DepartmentDao{
 
     @Override
     public Department findById(Integer id) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        PreparedStatement st = null;
+        ResultSet rs = null;
+        try{
+            st = conn.prepareStatement("SELECT * FROM department "
+                    + "WHERE department.ID = ?");
+            st.setInt(1, id);
+            
+            rs = st.executeQuery();
+            if(rs.next()){
+                Department dep = new Department(rs.getInt("Id"), rs.getString("Name"));
+                return dep;
+            }else {
+                
+                throw new DbException("Error finding the department");
+            }
+            
+        }
+        catch(SQLException e){
+            
+            throw new DbException(e.getMessage());
+
+        }finally{
+            DB.closeStatement(st);
+            DB.closeResultSet(rs);
+        }
     }
 
     @Override

@@ -53,10 +53,15 @@ public class Program {
         sellerDao.deleteById(6);
         System.out.println("Deleted!"); */
         
-        System.out.println("\n=== TEST 1: Insert Departemt ===");
         DepartmentDao departmentDao = DaoFactory.createDepartmentDao();
+        
+        System.out.println("\n=== TEST 1: Insert Departemt ===");
         Department newDepartemnt = new Department(null, "MEcanica");
-        departmentDao.insert(newDepartemnt);
+        //departmentDao.insert(newDepartemnt);
+        
+        System.out.println("\n=== TEST 2: FindById Departemt ===");
+        newDepartemnt = departmentDao.findById(1);
+        System.out.println(newDepartemnt);
         
     }
 }
